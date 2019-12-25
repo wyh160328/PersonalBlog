@@ -1,0 +1,39 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="PersonalBlog">
+    <output-path>$PROJECT_DIR$/out/artifacts/PersonalBlog</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="personalblog/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="personalblog" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="websocket-api.jar" module-name="personalblog" />
+          <element id="library" level="module" name="annotations-api.jar" module-name="personalblog" />
+          <element id="library" level="module" name="catalina.jar" module-name="personalblog" />
+          <element id="library" level="module" name="catalina-ant.jar" module-name="personalblog" />
+          <element id="library" level="module" name="catalina-ha.jar" module-name="personalblog" />
+          <element id="library" level="module" name="catalina-storeconfig.jar" module-name="personalblog" />
+          <element id="library" level="module" name="catalina-tribes.jar" module-name="personalblog" />
+          <element id="library" level="module" name="ecj-4.6.1.jar" module-name="personalblog" />
+          <element id="library" level="module" name="el-api.jar" module-name="personalblog" />
+          <element id="library" level="module" name="jasper.jar" module-name="personalblog" />
+          <element id="library" level="module" name="jasper-el.jar" module-name="personalblog" />
+          <element id="library" level="module" name="jaspic-api.jar" module-name="personalblog" />
+          <element id="library" level="module" name="tomcat-api.jar" module-name="personalblog" />
+          <element id="library" level="module" name="tomcat-coyote.jar" module-name="personalblog" />
+          <element id="library" level="module" name="tomcat-dbcp.jar" module-name="personalblog" />
+          <element id="library" level="module" name="tomcat-i18n-es.jar" module-name="personalblog" />
+          <element id="library" level="module" name="tomcat-i18n-fr.jar" module-name="personalblog" />
+          <element id="library" level="module" name="tomcat-i18n-ja.jar" module-name="personalblog" />
+          <element id="library" level="module" name="tomcat-jdbc.jar" module-name="personalblog" />
+          <element id="library" level="module" name="tomcat-jni.jar" module-name="personalblog" />
+          <element id="library" level="module" name="tomcat-util.jar" module-name="personalblog" />
+          <element id="library" level="module" name="tomcat-util-scan.jar" module-name="personalblog" />
+          <element id="library" level="module" name="tomcat-websocket.jar" module-name="personalblog" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="personalblog/web/Web2" />
+    </root>
+  </artifact>
+</component>
