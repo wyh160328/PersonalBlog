@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.process.dao.GroupDao">
+    <resultMap type="com.process.bean.GroupPojo" id="grouplist">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="alias" property="alias" />
+        <result column="dec" property="dec" />
+        <result column="permission" property="permission" />
+    </resultMap>
+    <select id="findAllGroup" resultMap="grouplist">
+        select * from t_group;
+    </select>
+    <select id="findGroupById" parameterType="java.lang.String" resultMap="grouplist">
+        select * from t_group where t_group.id = #{id};
+    </select>
+    <update id="updataGroup" parameterType="com.process.bean.GroupPojo">
+        update t_group set
+        t_group.name = #{name},t_group.alias = #{alias},t_group.dec = #{dec},t_group.permission = #{permission}
+        where t_group.name = #{id};
+    </update>
+    <delete id="deleteGroupById" parameterType="java.lang.String">
+        delete from t_group where t_group.id = #{id};
+    </delete>
+</mapper>
